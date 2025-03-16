@@ -20,6 +20,8 @@ navigation:
 - text: About
   url: /about/
 
+include: [".well-known"]
+
 collections:
     toymodels_collection:
         output: true #This is necessary to make them output as pages

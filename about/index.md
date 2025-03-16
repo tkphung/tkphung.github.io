@@ -17,6 +17,6 @@ You can see some of my work here: [github.com/tkphung]({{ site.github }})
 
 Thanks for reading this- as a reward here is a drawing of my cat [*Chad Michael Purry*](https://www.instagram.com/chadmichaelpurry/).
 
-![Drawing of Chad Michael Purry](../about/cmp.jpg)
+![Drawing of Chad Michael Purry](CMP.jpg)
 
 Drawn by the talented [@tinytarakeet](https://www.instagram.com/tinytarakeet/).

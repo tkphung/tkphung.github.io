@@ -20,7 +20,7 @@ navigation:
 - text: About
   url: /about/
 
-include: [".well-known"]
+include: ["/.well-known"]
 
 collections:
     toymodels_collection:

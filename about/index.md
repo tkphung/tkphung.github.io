@@ -3,16 +3,14 @@ layout: default
 title: About blueface
 ---
 
-blueface is a minimalist Jekyll theme. It is responsive, generates JSON and RSS feeds on each build, and can be easily extended. It uses your system fonts alongside Open Sans, Droid Sans and Raleway from Google Fonts. Oh, and it has support for tags too.
+# tkphung
 
-> It supports blockquotes, too.
+I am currently a scientist at Novartis developing and using computational modeling (quantitative systems pharmacology, pharmacokinetics, pharmacodynamics) for drug development. 
 
-## blueface on the Internet
+Previously, I worked as a postdoc at Harvard T.H. Chan School of Public Health developing automated image analysis techniques to study airway epithelial cell biology. And I studied biomedical engineering at the University of Virginia where I developed computational electromechanical models to guide patient-specific cardiac therapies.
 
-* [blueface][github] on GitHub (Source Code)
-* [nolsigan][nolsigan] nolsigan.github.io
-* [rjsteckel][rjsteckel] data, beer, and stats
+Thanks for reading this- as a reward here is a drawing of my cat [*Chad Michael Purry*](https://www.instagram.com/chadmichaelpurry/).
 
-[github]: https://github.com/tnguyen/blueface/
-[nolsigan]: http://nolsigan.github.io
-[rjsteckel]: http://rjsteckel.github.io
+![Drawing of Chad Michael Purry](cmp.jpg)
+
+Drawn by the talented [@tinytarakeet](https://www.instagram.com/tinytarakeet/).

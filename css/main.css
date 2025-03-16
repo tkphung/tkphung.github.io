@@ -6,12 +6,39 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);
 @import url(https://fonts.googleapis.com/css?family=Raleway:800);
+
+:root {
+    --primary-color-background: #27391C; /* Dark Green */
+    --primary-color-text: #ffffff; /*White*/
+    --primary-color-hover: #1F7D53; /*Lighter Green*/
+    --secondary-color: #324787; /* Dark Blue */
+    --secondary-color-hover: #274977;
+    --text-color: #141515;
+    --light-text-color:#9f9f9f;
+    --heading-color: #27391C;
+    --link-color: #76a0de;
+    --link-color-hover:#274977;
+    --background-color: #ffffff;
+    --code-background: #f7f7f7;
+    --code-text: #494949;
+    --meta-text: #666666;
+    --border-color: #eee;
+    --current-nav-color: #b91414;
+    --label-default-color: #254d82;
+    --label-default-color-hover: #75a0de;
+    --block-quote-color: #8197b9;
+    --footer-color: #33536b;
+    --footer-link-color: #90a7ba;
+    --badge-color: #c25a5a;
+    --archive-tag-color:#305471;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 body {
-    color: #141515;
+    color: var(--text-color);
     font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     text-rendering: optimizeLegibility;
     overflow-y: scroll;
@@ -25,7 +52,7 @@ h5,
 h6 {
     font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-weight: 400;
-    color: #315572;
+    color: var(--heading-color);
 }
 #main h4 {
     line-height: 1.6em;
@@ -43,13 +70,13 @@ header h1 {
     padding-bottom: 2.1em;
 }
 header h1 a {
-    color: #ffffff;
+    color: var(--primary-color-text);
     font-size: 32px;
-    background-color: #0f2e57;
+    background-color: var(--primary-color-background);
     padding: 10px 13px;
 }
 header h1 a:hover {
-    color: #76a0dd;
+    color: var(--primary-color-hover);
 }
 #nav_container {
     margin-left: auto;
@@ -75,13 +102,13 @@ nav ul li {
 	font-size: 105%;
 }
 nav ul li a {
-    color: #324787;
+    color: var(--secondary-color);
     padding: 8px 9px;
     margin: 0 -10px 0px;
     text-transform: uppercase;
 }
 nav ul li a:hover {
-    color: #ffffff;
+    color: var(--background-color);
     background-color: #000000;
 }
 .heading {
@@ -195,7 +222,8 @@ a:hover {
     width: 100%
 }
 article p a {
-    border-bottom: 1px solid #e4edf9 font-weight: normal;
+    border-bottom: 1px solid #e4edf9;
+    font-weight: normal;
     font-style: normal;
 }
 .badge {
@@ -327,3 +355,101 @@ code {
 		font-size: 0.8em;
 	}
 }
+
+
+/* ... Calculator ... */
+#calculator {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ddd;
+}
+
+#calculator label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#calculator input[type="number"] {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Include padding and border in width */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* Most browsers */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+#result{
+    width: 100%;
+}
+
+#calculator button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#calculator button:hover {
+    background-color: #45a049;
+}
+
+.concentration-input-container {
+display: flex;
+align-items: center;
+gap: 10px; /* Adjust the space between elements as needed */
+flex-wrap: nowrap; /* Do not allow items to wrap to the next line */
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 5px; /* Adjust the spacing between buttons */
+}
+
+.radio-group input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.radio-group input[type="radio"]:before {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-group input[type="radio"]:checked:before {
+    background-color: #2196F3; /* Blue when checked */
+}
+

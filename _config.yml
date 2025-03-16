@@ -1,10 +1,10 @@
 # Jekyll Defaults
-title: blueface
-description: A small and simple site I made to test out Jekyll.
+title: tkphung
+description: Collection of things.
 baseurl: "" # the subpath of your site, e.g. /blog
 
-url: "https://thien.github.io/blueface/"
-github: http://github.com/tnguyen/blueface
+url: https://tkphung.github.io
+github: http://github.com/tkphung
 highlighter: rouge
 markdown: kramdown
 permalink: /post/:title/
@@ -13,9 +13,15 @@ gems: [jekyll-paginate]
 paginate_path: "/page:num"
 rss_path: /feed.xml
 navigation:
+- text: Tools
+  url: /tools/
+- text: Toy Models
+  url: /toymodels/
 - text: About
   url: /about/
-- text: Archives
-  url: /archives/
-- text: Tags
-  url: /tags/
+
+collections:
+    toymodels_collection:
+        output: true #This is necessary to make them output as pages
+    tools_collection:
+        output: true #This is necessary to make them output as pages

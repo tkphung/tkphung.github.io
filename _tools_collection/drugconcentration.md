@@ -9,7 +9,7 @@ permalink: /tools/drugconcentration/
 This calculator converts concentration between ng/mL and nM:
 
 $$
-nM = \frac{ng}{mL} * \frac{MW}{1000}
+nM = \frac{ng}{mL} * \frac{1000}{MW}
 $$
 
 <div id="calculator">
